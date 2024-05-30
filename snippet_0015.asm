@@ -1,0 +1,35 @@
+program PowersOfTwo;
+#include ("stdlib.hhf");
+
+static
+	pwrOf2: int32;
+	LoopCntr: int32;
+	
+begin PowersOfTwo;
+	// Print a startup banner
+	stdout.put("Powers of two: ", nl, nl);
+	
+	// Initialize "pwrOf2" with 2**0 (two raised to the zero power).
+	
+	mov(1, pwrOf2);
+	
+	// Because of the limitations of 32-bit signed integers, we can only display 2**0..2**30
+	
+	mov(0, LoopCntr);
+	
+	while(LoopCntr < 31) do
+		stdout.put("2**(", LoopCntr:2, ") = ", pwrOf2:10, nl);
+		
+		// Double the value in pwrOf2 to compute the next power of two.
+		
+		mov(pwrOf2, eax);
+		add(eax, eax);
+		mov(eax, pwrOf2);
+		
+		// Move on to the next loop iteration
+		
+		inc(LoopCntr);
+	
+	endwhile;
+	stdout.newln();
+end PowersOfTwo;
