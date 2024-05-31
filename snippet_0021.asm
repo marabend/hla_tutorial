@@ -7,7 +7,7 @@ static
 	
 begin HexIO;
 	stdout.put( "Enter a hexadecimal value: ");
-	stdin.getd(); // doesn't seem to work properly
+	stdin.geth32(); 
 	mov(eax, i32);
 	stdout.put(" The value you entered was $");
 	stdout.putd( i32 );
