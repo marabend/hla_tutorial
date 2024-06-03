@@ -8,7 +8,7 @@ program eolnDemo2;
 		repeat
 			
 			stdin.getc();
-			stdout.putc(al);
+			stdout.putc(al); // Routine to print out character
 			stdout.put("=$", al, nl);
 		
 		until( stdin.eoln() );
