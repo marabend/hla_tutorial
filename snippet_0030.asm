@@ -24,3 +24,10 @@ program dataInterpretation;
 		stdout.newln();
 		
 	end dataInterpretation;
+	
+	// stdout.putr80( r:real80; width:uns32; decpts:uns32 );
+	// stdout.putr64( r:real64; width:uns32; decpts:uns32 );
+	// stdout.putr32( r:real32; width:uns32; decpts:uns32 );
+	// stdout.pute80( r:real80; width:uns32 );
+	// stdout.pute64( r:real64; width:uns32 );
+	// stdout.pute32( r:real32; width:uns32 );
