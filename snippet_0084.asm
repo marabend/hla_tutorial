@@ -1,7 +1,5 @@
 program testRandom;
 
-// Does not compile
-
 #include ("stdlib.hhf");
 
 begin testRandom;
@@ -27,8 +25,7 @@ begin testRandom;
 		// Repeat this 10.000 times to get a good distribution of values.
 		
 		dec(ecx);
-	until(ecx);
-	
+			
 	until(@z);
 	
 	// Position the cursor at the bottom of the screen so we can observe the results
